@@ -1,0 +1,101 @@
+---
+const siteTitle = "Subbu & Co | Chartered Accountants & Auditors in Pollachi, Tamil Nadu";
+const siteDescription = "Subbu & Co is a professional auditing and accounting firm based in Pollachi, Tamil Nadu. We provide audit, tax filing, GST, and financial advisory services for individuals and businesses across South India.";
+const siteUrl = "https://subbuandco.com";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+
+    <!-- Basic SEO -->
+    <title>{siteTitle}</title>
+    <meta name="description" content={siteDescription} />
+    <meta name="keywords" content="auditors in Pollachi, chartered accountant Pollachi, tax consultant Pollachi, accounting firm Tamil Nadu, Subbu and Co, audit firm in Coimbatore, GST filing Pollachi" />
+    <meta name="author" content="Subbu & Co" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={siteUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={siteDescription} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:site_name" content="Subbu & Co" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={siteDescription} />
+
+    <!-- Geo & Local Info -->
+    <meta name="geo.region" content="IN-TN" />
+    <meta name="geo.placename" content="Pollachi" />
+    <meta name="geo.position" content="10.6625;77.0081" />
+    <meta name="ICBM" content="10.6625, 77.0081" />
+
+    <!-- Schema.org Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "Subbu & Co",
+      "@id": "https://subbuandco.com",
+      "url": "https://subbuandco.com",
+      "telephone": "+91-9876543210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Clock Tower, Pollachi",
+        "addressLocality": "Pollachi",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "642001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.6625,
+        "longitude": 77.0081
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:30",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #1a1a2e;
+    overflow-x: hidden;
+  }
+</style>

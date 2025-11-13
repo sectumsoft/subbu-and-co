@@ -1,0 +1,190 @@
+---
+---
+
+<section class="why-choose">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle">Your trusted partner for financial excellence</p>
+
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+        </div>
+        <h3>Accuracy & Transparency</h3>
+        <p>Precise financial reporting with complete transparency in all our processes.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 010 7.75"></path>
+          </svg>
+        </div>
+        <h3>Experienced Professionals</h3>
+        <p>Skilled team of certified auditors and financial experts dedicated to your success.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <h3>Timely Delivery</h3>
+        <p>Committed to meeting deadlines with efficient and prompt service delivery.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="8.5" cy="7" r="4"></circle>
+            <polyline points="17 11 19 13 23 9"></polyline>
+          </svg>
+        </div>
+        <h3>Trusted by Businesses</h3>
+        <p>Proven track record of serving numerous satisfied clients across Tamil Nadu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-choose {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .why-choose::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.02) 35px, rgba(255,255,255,.02) 70px);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #e5c158);
+    border-radius: 2px;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(212, 175, 55, 0.3);
+  }
+
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #d4af37 0%, #e5c158 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a2463;
+    transition: all 0.3s ease;
+  }
+
+  .feature:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+  }
+
+  .feature h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .feature p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .why-choose {
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

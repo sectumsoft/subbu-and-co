@@ -1,0 +1,492 @@
+--- 
+--- 
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">We're here to help with your financial needs</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Visit Us</h3>
+          <p>No.10, Shopping Mall, 2nd Floor<br>Coimbatore Road<br>Pollachi - 642002<br>Tamil Nadu, India</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+            </svg>
+          </div>
+          <h3>Call Us</h3>
+          <p><a href="tel:+919842257861">+91 98422 57861</a></p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h3>Email Us</h3>
+          <p><a href="mailto:subbuandcopoy@gmail.com">subbuandcopoy@gmail.com</a></p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>Working Hours</h3>
+          <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <!-- IMPORTANT: set action + access_key -->
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <!-- replace the value below with your real Web3Forms access key -->
+          <input type="hidden" name="access_key" value="ca977943-9b79-43bd-976f-6691778a7cb3" />
+          <!-- optional: custom subject -->
+          <input type="hidden" name="subject" value="New message from SUBBU & CO website" />
+          <!-- optional: uncomment and set after you have live domain -->
+          <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html" /> -->
+
+          <!-- Honeypot for bots -->
+          <div style="display:none;">
+            <label>Leave this field empty</label>
+            <input type="text" name="botcheck" />
+          </div>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="success-message" id="successMessage" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for contacting us. We'll get back to you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* (exact same CSS you provided) */
+  .contact {
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, white 0%, #f8f9fa 100%);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0a2463;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #e5c158);
+    border-radius: 2px;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #6b7280;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 1.2rem;
+    align-items: start;
+  }
+
+  .info-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 6px 25px rgba(10, 36, 99, 0.1);
+  }
+
+  .info-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .info-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0a2463;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+
+  .info-card a {
+    color: #0a2463;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .info-card a:hover {
+    color: #d4af37;
+  }
+
+  .contact-form-wrapper {
+    position: relative;
+  }
+
+  .contact-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    color: #0a2463;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(10, 36, 99, 0.3);
+  }
+
+  .success-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: none;
+    z-index: 10;
+  }
+
+  .success-message.show {
+    display: block;
+    animation: fadeInScale 0.5s ease;
+  }
+
+  .success-message svg {
+    color: #10b981;
+    margin-bottom: 1rem;
+  }
+
+  .success-message h3 {
+    font-size: 1.5rem;
+    color: #0a2463;
+    margin-bottom: 0.5rem;
+  }
+
+  .success-message p {
+    color: #6b7280;
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  @media (max-width: 968px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact {
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .contact-form {
+      padding: 2rem;
+    }
+
+    .success-message {
+      padding: 2rem;
+      margin: 0 1rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    if (!form) return;
+
+    // Helper: show error message below input
+    function showError(input, message) {
+      let error = input.parentNode.querySelector('.error-message');
+      if (!error) {
+        error = document.createElement('div');
+        error.className = 'error-message';
+        input.parentNode.appendChild(error);
+      }
+      error.textContent = message;
+      input.classList.add('error');
+    }
+
+    function clearError(input) {
+      input.classList.remove('error');
+      const error = input.parentNode.querySelector('.error-message');
+      if (error) error.textContent = '';
+    }
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function validatePhone(phone) {
+      // Basic check: Indian 10-digit number or with +91
+      return /^(\+91[\-\s]?)?[0]?(91)?[6-9]\d{9}$/.test(phone.trim());
+    }
+
+    function validateForm() {
+      let isValid = true;
+      const name = form.name;
+      const email = form.email;
+      const phone = form.phone;
+      const message = form.message;
+
+      // Clear previous errors
+      [name, email, phone, message].forEach(clearError);
+
+      if (!name.value.trim()) {
+        showError(name, 'Please enter your name.');
+        isValid = false;
+      }
+
+      if (!email.value.trim()) {
+        showError(email, 'Please enter your email address.');
+        isValid = false;
+      } else if (!validateEmail(email.value)) {
+        showError(email, 'Please enter a valid email address.');
+        isValid = false;
+      }
+
+      if (phone.value && !validatePhone(phone.value)) {
+        showError(phone, 'Please enter a valid phone number.');
+        isValid = false;
+      }
+
+      if (!message.value.trim()) {
+        showError(message, 'Please enter your message.');
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // Honeypot check
+      if (form.botcheck && form.botcheck.value) return;
+
+      // Validate before submitting
+      if (!validateForm()) {
+        return; // Stop if invalid
+      }
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.dataset.orig = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+
+      const formData = new FormData(form);
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' }
+        });
+
+        if (res.ok) {
+          form.style.opacity = '0';
+          setTimeout(() => {
+            form.style.display = 'none';
+            successMessage.classList.add('show');
+            successMessage.setAttribute('aria-hidden', 'false');
+          }, 300);
+
+          setTimeout(() => {
+            successMessage.classList.remove('show');
+            successMessage.setAttribute('aria-hidden', 'true');
+            form.style.display = '';
+            form.style.opacity = '1';
+            form.reset();
+          }, 3500);
+        } else {
+          const errorJson = await res.json().catch(() => null);
+          console.error('Form submit error', errorJson);
+          alert('Failed to send message. Please try again later.');
+        }
+      } catch (err) {
+        console.error('Network error', err);
+        alert('Network error. Check your connection and try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = submitBtn.dataset.orig || 'Send Message';
+      }
+    });
+  })();
+</script>
+
+<style>
+  /* Add these styles to make errors look nice */
+  .error-message {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+
+  .error {
+    border-color: #dc2626 !important;
+    background-color: #fef2f2 !important;
+  }
+</style>

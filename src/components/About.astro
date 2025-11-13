@@ -1,0 +1,152 @@
+---
+---
+
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">About SUBBU & CO Auditors</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          At SUBBU & CO, we are a team of experienced auditors and financial experts based in Pollachi, Tamil Nadu.
+          We specialize in auditing, tax filing, GST compliance, business registration, and accounting services for individuals and businesses.
+        </p>
+        <p>
+          Our mission is to deliver accurate, transparent, and timely financial solutions that help clients make confident business decisions.
+          With a commitment to excellence and integrity, SUBBU & CO has earned the trust of numerous clients across Tamil Nadu.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-icon">⚖️</div>
+          <h3>Professional Excellence</h3>
+          <p>Certified expertise in auditing and financial services</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🤝</div>
+          <h3>Client-Focused</h3>
+          <p>Dedicated to your financial success and growth</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📍</div>
+          <h3>Local Presence</h3>
+          <p>Serving businesses across Pollachi and Tamil Nadu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, #f8f9fa 0%, white 100%);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0a2463;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #e5c158);
+    border-radius: 2px;
+  }
+
+  .about-content {
+    margin-top: 4rem;
+  }
+
+  .about-text {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .stat-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(10, 36, 99, 0.05);
+  }
+
+  .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(10, 36, 99, 0.12);
+  }
+
+  .stat-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0a2463;
+    margin-bottom: 0.8rem;
+  }
+
+  .stat-card p {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+    }
+
+    .about-stats {
+      gap: 1.5rem;
+    }
+
+    .stat-card {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>
