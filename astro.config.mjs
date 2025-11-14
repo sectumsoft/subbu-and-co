@@ -1,9 +1,8 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
-     site: 'https://subbuandco.com/',
-  base: '/',
-  outDir: './dist',
+  site: 'https://subbuandco.com/',   // <-- IMPORTANT
+  base: '/',                         // root domain
+  trailingSlash: 'always',           // GitHub Pages fix
+  outDir: './dist',                  // default
 });
